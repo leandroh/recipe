@@ -1,0 +1,4 @@
+recipe do
+  name "Potato Bread"
+  ingredients "4.5 lbs russet potatoes", "1.5 cups water", "4 tbl dry yeast", "2 tbl olive oil", "4.5 lbs apflour", "3 tbl salt (or to taste)"
+end

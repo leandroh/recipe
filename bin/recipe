@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require File.dirname(__FILE__) + '/../lib/recipe.rb'
+
+if $stdin.tty?
+  ARGV.each do |f|
+    puts Recipe::Parser.import(IO.read("#{f}.recipe"))
+  end
+else
+  puts Recipe::Parser.import($stdin.read)
+end
