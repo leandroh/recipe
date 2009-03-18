@@ -5,3 +5,15 @@ A dead simple DSL responsible to understand .recipe files.
 == Description
 
 This projects aims to demonstrate the use of a specific language to create your own recipe (in a DSL way). Used for academic purposes only.
+
+== Install
+
+Download all the files then:
+* chmod 755 bin/recipe
+* sudo mv bin/recipe /usr/local/bin/recipe
+
+== Usage
+
+recipe < examples/potato_bread.recipe
+OR
+recipe examples/potato_bread
