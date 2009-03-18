@@ -1,0 +1,7 @@
+= Recipe
+
+A dead simple DSL responsible to understand .recipe files.
+
+== Description
+
+This projects aims to demonstrate the use of a specific language to create your own recipe (in a DSL way). Used for academic purposes only.
