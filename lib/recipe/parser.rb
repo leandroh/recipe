@@ -9,8 +9,8 @@ module Recipe
       @recipe = Recipe::Container.new
     end
 
-    def recipe(&bloco)
-      bloco.call
+    def recipe(&block)
+      block.call
       @recipe
     end
 
