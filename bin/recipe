@@ -6,9 +6,9 @@ if __FILE__ == $0
   include Recipe
   if $stdin.tty?
     ARGV.each do |f|
-      puts Parser.parse(f)
+      puts Parser.parse(IO.read(f))
     end
   else
-    puts Parser.parse($stdin)
+    puts Parser.parse($stdin.read)
   end
 end

@@ -1,12 +1,6 @@
 module Recipe
   class Parser
     def self.parse(file)
-      file = if file.kind_of?(String)
-        IO.read(file)
-      else
-        file.read
-      end
-      
       klass = new
       klass.instance_eval(file)
     end
