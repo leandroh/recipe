@@ -14,6 +14,5 @@ Download all the files then:
 
 == Usage
 
-recipe < examples/potato_bread.recipe
-OR
-recipe examples/potato_bread
+  recipe < examples/potato_bread.recipe
+  recipe examples/potato_bread

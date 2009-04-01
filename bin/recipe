@@ -2,10 +2,13 @@
 
 require File.dirname(__FILE__) + '/../lib/recipe.rb'
 
-if $stdin.tty?
-  ARGV.each do |f|
-    puts Recipe::Parser.import(IO.read("#{f}.recipe"))
+if __FILE__ == $0
+  include Recipe
+  if $stdin.tty?
+    ARGV.each do |f|
+      puts Parser.parse(f)
+    end
+  else
+    puts Parser.parse($stdin)
   end
-else
-  puts Recipe::Parser.import($stdin.read)
 end
